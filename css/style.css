@@ -679,8 +679,7 @@ h6 {
     padding: 1.5rem 2rem;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.5);
-    border-bottom: 3px solid transparent;
-    border: none;
+    border: 2px solid rgba(229, 229, 229, 0.5);
     width: 90%;
     display: block;
     transition: all .3s; }
@@ -690,9 +689,9 @@ h6 {
     .form__input:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-      border-bottom: 3px solid #cf6766; }
+      border-bottom: 3px solid #F4DBDC; }
     .form__input:focus:invalid {
-      border-bottom: 3px solid #8EAEBD; }
+      border-bottom: 3px solid #cf6766; }
     .form__input::-webkit-input-placeholder {
       color: #999; }
   .form__label {
@@ -973,7 +972,7 @@ div#specialBox, div#specialBox2 {
   z-index: -1; }
   @media only screen and (max-width: 37.5em) {
     .aboutme__container {
-      height: 50vh; } }
+      height: 65vh; } }
 
 .aboutme__wordings {
   position: absolute;
@@ -988,13 +987,16 @@ div#specialBox, div#specialBox2 {
   animation: blur 3s ease-in-out; }
   @media only screen and (max-width: 37.5em) {
     .aboutme__wordings {
-      width: 100%;
-      font-size: 3.2rem;
-      padding-left: 7rem;
-      top: 55%; } }
+      width: 70%;
+      font-size: 4rem;
+      padding-left: 6rem;
+      top: 40%; } }
 
 .aboutme__heroimg {
   width: 90%; }
+  @media only screen and (max-width: 37.5em) {
+    .aboutme__heroimg {
+      width: 100%; } }
 
 .aboutme__image1 {
   float: left;

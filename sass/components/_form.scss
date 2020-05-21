@@ -45,8 +45,7 @@
         padding: 1.5rem 2rem;
         border-radius: 2px;
         background-color: rgba($color-white, .5);
-        border-bottom: 3px solid transparent;
-        border: none;
+        border: 2px solid rgba($color-grey-light-2, .5);
         width: 90%;
         display: block;
         transition: all .3s;
@@ -58,11 +57,11 @@
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);
-            border-bottom: 3px solid $color-primary;
+            border-bottom: 3px solid $color-primary-light;
         }
 
         &:focus:invalid {
-            border-bottom: 3px solid $color-secondary-light;
+            border-bottom: 3px solid $color-primary;
         }
 
         &::-webkit-input-placeholder {
