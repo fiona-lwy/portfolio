@@ -664,7 +664,8 @@ h6 {
     height: 100vh; }
     @media only screen and (max-width: 37.5em) {
       .form__background {
-        padding: 15rem 1rem; } }
+        padding: 15rem 1rem;
+        min-height: 85rem; } }
   .form__content {
     width: 60%;
     padding: 6rem; }
@@ -1172,6 +1173,9 @@ div#specialBox, div#specialBox2 {
     height: 5rem;
     width: auto;
     display: block; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        height: 4rem; } }
     .header__logo:hover {
       animation: moveInRight 1s; }
   .header__text-box {
@@ -1322,7 +1326,9 @@ div#specialBox, div#specialBox2 {
   @media only screen and (max-width: 37.5em) {
     .navigation__button {
       top: 3rem;
-      right: 3rem; } }
+      right: 3rem;
+      height: 5rem;
+      width: 5rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -1340,6 +1346,8 @@ div#specialBox, div#specialBox2 {
       right: 4.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
+      height: 2rem;
+      width: 2rem;
       top: 3.5rem;
       right: 3.5rem; } }
 
@@ -1350,7 +1358,7 @@ div#specialBox, div#specialBox2 {
   top: 0;
   left: 0;
   z-index: 1500;
-  opacity: 0;
+  display: none;
   transition: all 0.8s cubic-bezier(0.86, -0.55, 0.265, 1.55); }
 
 .navigation__list {
@@ -1361,7 +1369,8 @@ div#specialBox, div#specialBox2 {
   list-style: none;
   text-align: center;
   width: 100%;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  animation: blur 1s ease-in; }
 
 .navigation__item {
   padding: 1rem 0; }
@@ -1396,20 +1405,27 @@ div#specialBox, div#specialBox2 {
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80); }
+  transform: scale(90); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
+  display: block;
   width: 100%; }
 
 .navigation__icon {
   margin-top: 3.5rem;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__icon {
+      margin-top: 2.4rem; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
     background-color: #cf6766;
     display: inline-block; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 2rem;
+        height: 2px; } }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;

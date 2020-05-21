@@ -25,6 +25,7 @@
 
         @include respond(phone) {
             padding: 15rem 1rem;
+            min-height: 85rem;
         }
     }
 

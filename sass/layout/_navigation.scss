@@ -25,7 +25,8 @@
         @include respond(phone) {
             top: 3rem;
             right: 3rem;
-            
+            height: 5rem;
+            width: 5rem;
         }
     }
 
@@ -46,6 +47,8 @@
         }
 
         @include respond(phone) {
+            height: 2rem;
+            width: 2rem;
             top: 3.5rem;
             right: 3.5rem;
         }
@@ -58,7 +61,7 @@
         top: 0;
         left: 0;
         z-index: 1500;
-        opacity: 0;
+        display: none;
         transition: all .8s cubic-bezier(0.86, -0.55, 0.265, 1.55);
     }
 
@@ -71,6 +74,7 @@
         text-align: center;
         width: 100%;
         margin-bottom: 5rem;
+        animation: blur 1s ease-in;
     }
 
     &__item {
@@ -118,11 +122,11 @@
 
     //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
-        transform: scale(80);
+        transform: scale(90);
     }
 
     &__checkbox:checked ~ &__nav {
-        opacity: 1;
+        display: block;
         width: 100%;
     }
 
@@ -131,6 +135,10 @@
         margin-top: 3.5rem;
         position: relative;
 
+        @include respond(phone) {
+            margin-top: 2.4rem;
+        }
+
         &,
         &::before,
         &::after {
@@ -138,6 +146,11 @@
             height: 2px;
             background-color: $color-primary;
             display: inline-block;
+
+            @include respond(phone) {
+                width: 2rem;
+                height: 2px;
+            }
         }
 
         &::before,
