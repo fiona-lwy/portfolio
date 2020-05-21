@@ -535,12 +535,12 @@ h6 {
     text-transform: uppercase; }
   @media only screen and (max-width: 37.5em) {
     .card {
-      height: 40rem;
+      height: 43rem;
       background-color: #934A5F;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       border-radius: 10px; }
       .card__side {
-        height: 25rem;
+        height: 28rem;
         position: relative;
         box-shadow: none;
         letter-spacing: 2px; }
@@ -548,12 +548,12 @@ h6 {
           height: 15rem; }
         .card__side--back {
           transform: rotateY(0);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+          border-radius: 0 0 10px 10px; }
       .card:hover .card__side--front {
         transform: rotateY(0); }
       .card__cta {
         position: absolute;
-        bottom: 0;
+        top: 45%;
         left: 0;
         transform: translate(0);
         width: 100%; }
@@ -1160,7 +1160,10 @@ div#specialBox, div#specialBox2 {
       background-image: url("../img/heroimg2.jpg"); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      background-position: left; } }
+      background: linear-gradient(to right, #f7f7f7, #E5E5E5);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+      height: 50vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -1177,6 +1180,13 @@ div#specialBox, div#specialBox2 {
     top: 35%;
     right: 6%;
     text-align: left; }
+    @media only screen and (max-width: 37.5em) {
+      .header__text-box {
+        top: 40%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        text-align: center; } }
 
 .row {
   max-width: 114rem;
@@ -1369,6 +1379,9 @@ div#specialBox, div#specialBox2 {
   background-size: 230%;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   transition: all .4s; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2.5rem; } }
 
 .navigation__link span {
   margin-right: 1.5rem;
@@ -1434,7 +1447,7 @@ div#specialBox, div#specialBox2 {
       padding: 20rem 0; } }
   @media only screen and (max-width: 37.5em) {
     .section-about {
-      padding: 20rem 0 10rem 0; } }
+      padding: 15rem 0 10rem 0; } }
 
 .section-sidework {
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(244, 219, 220, 0.8)), url("../img/more_img.jpeg");

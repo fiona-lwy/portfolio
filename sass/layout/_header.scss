@@ -25,7 +25,10 @@
     }
 
     @include respond(phone) {
-        background-position: left;
+        background: linear-gradient(to right, $color-grey-light, $color-grey-light-2);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+        height: 50vh;
     }
 
     &__logo-box {
@@ -50,6 +53,14 @@
         top: 35%;
         right: 6%;
         text-align: left;
+
+        @include respond(phone) {
+            top: 40%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
 }
