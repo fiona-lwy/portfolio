@@ -1,0 +1,96 @@
+.form {
+
+    display: block;
+
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 60%, transparent 60%),url(../img/writinghand.png);
+        background-size: 100%;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
+
+        @include respond(phone) {
+            background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 80%, transparent 80%),url(../img/writinghand.png);
+            background-size: cover;
+        }
+    }
+
+    &__background {
+        background-color: $color-primary-light;
+        padding: 15rem 10rem;
+        height: 100vh;
+
+        @include respond(phone) {
+            padding: 15rem 1rem;
+        }
+    }
+
+    &__content {
+        width: 60%;
+        padding: 6rem;
+
+        @include respond(phone) {
+            padding: 4rem;
+            width: 100%;
+        }
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border-bottom: 3px solid transparent;
+        border: none;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+        
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-secondary-light;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
+        }
+
+    }
+
+    
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+        text-align: left;
+    }
+
+    &__input:placeholder-shown + &__label {
+
+        //havent started writing
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    &__textarea {
+        min-height: 15rem;
+    }
+}

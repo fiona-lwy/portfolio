@@ -1,0 +1,280 @@
+.container {
+    height: auto;
+    text-align: center;
+    width: 60%;
+    margin: 10rem auto;
+
+    @include respond(phone) {
+        width: 90%;
+        margin: 5rem auto;
+    }
+
+    &2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.banner {
+    background-size: cover;
+    height: 90vh;
+    background-repeat: no-repeat;
+
+    @include respond(phone) {
+        height: 40vh;
+    }
+
+    &-1 {
+    background-image: url(../img/project2Img.jpg);
+    
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+                only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+                only screen and (min-width: 125em) {
+                background-image: /*linear-gradient(
+                    to right bottom, 
+                    rgba($color-primary-light, 0.8), 
+                    rgba($color-primary-dark, 0.8)), */
+                    url(../img/project2Img.jpg);
+        }
+    }
+}
+
+.arrow {
+    color: $color-grey-dark;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.overview {
+    margin: 10rem auto 20rem auto;
+
+    &__container {
+    width: 100%;
+    height: 80rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    }
+
+    &__bg {
+        background-image: linear-gradient(to right bottom, rgba($color-primary, .4), rgba($color-primary-light, .3)),url(../img/writinghand.png);
+        margin-bottom: -10rem;
+        width: 52%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-left: 20px solid $color-secondary-dark;
+    }
+
+    &__position {
+        position: absolute;
+        width: 50%;
+        right: 3rem;
+        top: 5rem;
+        display: block;
+        z-index: 2;
+    }
+}
+
+.title {
+    position: relative;
+    width: 100%;
+}
+
+.heading__decor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    width: 100%;
+
+    &::before,
+    &::after {
+        content:"";
+        position: absolute;
+        width: 25rem;
+        height: 3rem;
+        margin: auto 0;
+        background-color: $color-primary-light;
+        display: inline-block;
+    }
+
+    &::before {
+        left: 0;
+        border-left: 2rem solid $color-text;
+        //transform-origin: right;
+    }
+
+    &::after {
+        right: 0;
+        border-right: 4rem solid $color-primary;
+    }
+}
+
+.chartStyle {
+    margin: 5rem auto;
+}
+
+.tools { //=card
+    border: 5px solid $color-primary-light;
+    border-radius: 10px;
+    background-color: $color-white;
+    overflow: hidden;
+    height: 80rem;
+    padding: 5rem;
+}
+
+.intro__icon { 
+    font-size: 10rem;
+    color: $color-primary-light;
+    text-align: center;
+}
+
+.styling {
+    height: auto;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.shadow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.persona {
+    box-shadow: 0 1rem 4rem rgba($color-grey-dark-2, .15);
+    padding: 3rem 2rem;
+
+    & .paragraph--title {
+        background-image: none;
+    }
+}
+
+.wireframe_container {
+    display: flex;
+    height: 70rem;
+    overflow-x: scroll;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+
+    @media screen and (max-width: 1024px){
+        height: 45rem;
+    }
+
+    @media screen and (max-width: 575px){
+        height: 28rem;
+    }
+ }
+
+.wireframe_container::-webkit-scrollbar {
+    display: none;
+}
+
+.wireframe_container .slide {
+    display: inline-block;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+
+.scroll_img {
+    height: 60rem;
+    margin: 2rem;
+    width: auto;
+
+    @media screen and (max-width: 1024px){
+            height: 35rem;
+        }
+
+    @media screen and (max-width: 575px){
+            height: 20rem;
+            margin: 1rem;
+    }
+}
+
+.conclusion__section {
+    background-color: rgba($color-primary-light, .2);
+    color: $color-primary-dark;
+    padding: 0.5rem 0 10rem 0;
+
+    & .paragraph--title {
+        color: $color-grey-dark-3;
+        font-size: 2rem;
+    }
+}
+
+.otherprojects {
+
+    &__bg {
+        background-color: $color-grey-light;
+        padding: 8rem 0;
+    }
+
+    &__container {
+        width: 100%;
+        height: 40rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        background-color: rgba($color-white, .95);
+        border-radius: 10px;
+        padding: 3rem;
+    }
+
+    &__img {
+        width: 45%;
+        margin-right: 3rem;
+    }
+
+    &__text {
+        padding: 5rem auto;
+
+        & .paragraph--title {
+            background-image: none;
+        }
+    }
+}
+
+div#overlay, div#overlay2 {
+	display: block;
+	z-index: 2;
+    background: rgba(244, 219, 220,.8);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+div#specialBox, div#specialBox2 {
+	display: block;
+    position: relative;
+	z-index: 3;
+    width: 50rem; 
+    top: 38%;
+    left: 35%;
+    height: 12rem;
+    background: #FFF;
+    border-radius: 10px;
+	color: $color-primary;
+}
+
+@media screen and (max-width: 1024px){
+    div#specialBox, div#specialBox2 {
+        margin: 130px auto 0px auto;
+        height: 13rem;
+    }
+}
+
+@media screen and (max-width: 575px){
+    div#specialBox, div#specialBox2 {
+        width: 20rem; 
+        margin: 70px auto 0px auto;
+        height: 11rem;
+    }
+}
+
+.color__primary {
+    color: $color-primary;
+}

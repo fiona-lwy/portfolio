@@ -1,0 +1,139 @@
+.aboutme {
+
+    &__container, &__imagecontainer {
+        position: relative;
+        text-align: right;
+        width: 100%;
+    }
+
+    &__container {
+        height: 100vh;
+        z-index: -1;
+
+        @include respond(phone) {
+            height: 50vh;
+        }
+    }
+
+    &__wordings {
+        position: absolute;
+        width: 70%;
+        top: 40%;
+        z-index: 100;
+        color: $color-grey-dark-3;
+        font-size: 8rem;
+        text-align: left;
+        font-family: century-old-style-std, serif;
+        padding-left: 20rem;
+        animation: blur 3s ease-in-out;
+
+        @include respond(phone) {
+            width: 100%;
+            font-size: 3.2rem;
+            padding-left: 7rem;
+            top: 55%;
+        }
+    }
+
+    &__heroimg {
+        width: 90%;
+
+    }
+
+    &__image1 {
+        float: left;
+        width: 33%;
+        z-index: -1;
+
+        @include respond(phone) {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    &__image2 {
+        z-index: 4;
+        width: 100%;
+        background-size: cover;
+    }
+    
+    &__image3 {
+        position: absolute;
+        z-index: 3;
+        top: 58%;
+        right: 3%;
+        width: 20%;
+        background-size: cover;
+
+        @include respond(phone) {
+            top: 22%;
+        }
+    }
+
+    &__image4 {
+        position: absolute;
+        z-index: 3;
+        top: 10%;
+        left: 0;
+        width: 38%;
+        background-size: cover;
+    }
+
+    &__image5 {
+        position: absolute;
+        z-index: -1;
+        top: -45%;
+        right: 0;
+        width: 45%;
+        background-size: cover;
+    }
+
+    &__textbox1 {
+        margin-left: 60rem;
+
+        @include respond(phone) {
+            margin: 5rem auto;
+            width: 90%;
+        }
+    }
+
+    &__textbox2 {
+        margin-right: 45rem;
+
+        @include respond(phone) {
+            margin: 5rem auto;
+            width: 90%;
+        }
+    }
+}
+
+.truth {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: 100rem;
+
+    @include respond(phone) {
+        height: 40rem;
+    }
+
+    &__textbox {
+        width: 38%;
+        background-color: $color-primary;
+        border-radius: 10px;
+        color: $color-white;
+        padding: 15rem 8rem;
+        position: absolute;
+        top: 30%;
+        right: 28%;
+        z-index: 4;
+
+        @include respond(phone) {
+            width: 65%;
+            border-radius: 5px;
+            padding: 5rem 2rem;
+            top: 3%;
+            right: 5%;
+        }
+    }
+}
