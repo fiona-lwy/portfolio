@@ -58,6 +58,7 @@
         @include respond(phone) {
             height: 110rem;
             display: block;
+            height: 160rem;
         }
     }
 
@@ -87,10 +88,7 @@
 
         @include respond(phone) {
             width: 90%;
-            position: relative;
             margin: 5rem auto;
-            right: 0;
-            top: 0;
         }
     }
 }
