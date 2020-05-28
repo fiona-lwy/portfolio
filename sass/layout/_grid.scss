@@ -1,8 +1,10 @@
 .row {
+    display: flex;
     max-width: $grid-width;
     margin: 0 auto;
     justify-content: center;
     justify-items: center;
+    align-content: center;
     align-items: center;
 
     &:not(:last-child) {
@@ -13,8 +15,8 @@
         }
     }
     
-    @include respond(tab-port) {
-        max-width: 50rem;
+    @include respond(tab-land) {
+        max-width: $grid-width-tab-land;
         padding: 0 3rem;
     }
 

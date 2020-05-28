@@ -81,7 +81,7 @@ body {
     text-transform: uppercase;
 
     @include respond(phone){
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -117,7 +117,7 @@ h4 {
     margin: 5rem auto;
 
     @include respond(phone) {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 }
 

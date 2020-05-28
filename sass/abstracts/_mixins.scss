@@ -36,10 +36,10 @@ ORDER: Base + Typography > General layout + grid > page layout > Components
         @media only screen and (max-width: 37.5em){ @content }; //600px
     }
     @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em){ @content }; //900px
+        @media only screen and (max-width: 64em) and (orientation: portrait){ @content }; //900px-->1024
     }
     @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em){ @content }; //1200px
+        @media only screen and (max-width: 85.4em) and (orientation: landscape){ @content }; //1200px->1366
     }
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 112.5em){ @content }; //1800px

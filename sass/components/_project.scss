@@ -86,10 +86,13 @@
 
         &__right {
             float: right;
+            margin-right: 0;
+            margin-left: $gutter-horizontal;
 
             @include respond(phone) {
                 float: left;
                 width: 100%;
+                margin-left: 2rem;
             }
         }
     }
@@ -106,25 +109,13 @@
         &__left {
             float: left;
             width: 50%;
+
+            @include respond(phone) {
+                width: 100%;
+            }
         }
     }
 
-}
-
-.desktop {
-
-    @include respond(phone) {
-        display: none;
-    }
-}
-
-.mobile {
-    display: none;
-
-    @include respond(phone) {
-        display: block;
-        width: 100%;
-    }
 }
 
 .projectimg {

@@ -61,6 +61,10 @@
         &-1 {
             background-image: linear-gradient(to bottom, rgba($color-primary-light, .3), rgba($color-primary-dark, .5)), url('../img/sidework_hero.jpeg');
 
+            @include respond(tab-land) {
+                background-position: 10% 10%;
+            }
+
             @include respond(phone) {
                 background-position: 10% 10%;
             }
@@ -68,6 +72,10 @@
 
         &-2 {
             background-image: linear-gradient(to bottom, rgba($color-primary-light, .1), rgba($color-primary-dark, .5)), url('../img/tutoring_heroimg.jpeg');
+
+            @include respond(tab-land) {
+                background-position: top;
+            }
 
             @include respond(phone) {
                 background-position: top;
@@ -91,6 +99,86 @@
         text-transform: uppercase;
     }
 
+
+
+    @include respond(tab-land) {
+        height: 43rem;
+        background-color: $color-primary-dark;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        border-radius: 10px;
+
+        &__side {
+            height: 28rem;
+            position: relative;
+            box-shadow: none;
+            letter-spacing: 2px;
+    
+            &--front {
+                height: 15rem;
+            }
+
+            &--back {
+                transform: rotateY(0);
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+
+        &__cta {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+        }
+
+        &__sideworks {
+            margin-bottom: 0;
+        }
+    }
+
+    @include respond(tab-port) {
+        height: 43rem;
+        background-color: $color-primary-dark;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        border-radius: 10px;
+        margin-right: 1rem;
+
+        &__side {
+            height: 28rem;
+            position: relative;
+            box-shadow: none;
+            letter-spacing: 2px;
+    
+            &--front {
+                height: 15rem;
+            }
+
+            &--back {
+                transform: rotateY(0);
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+
+        &__cta {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+        }
+
+        &__sideworks {
+            margin-bottom: 0;
+        }
+    }
 
 //@include respond(tab-port) {
     @include respond(phone) {
@@ -130,6 +218,12 @@
         &__sideworks {
             margin-bottom: 0;
         }
+    }
+}
+
+@include respond(tab-land) {
+    .section-sidework .u-margin-top-huge {
+        margin-top: 0 !important;
     }
 }
 

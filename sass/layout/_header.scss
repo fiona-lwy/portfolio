@@ -14,12 +14,19 @@
         height: 100vh;
     }
 
+    @include respond(tab-land) {
+        background-position: right;
+    }
+
+    @include respond(tab-port) {
+        background-position: left;
+    }
+
     @include respond(phone) {
         background: linear-gradient(to right, $color-grey-light, $color-grey-light-2);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
         height: 50vh;
-
     }
 
     &__logo-box {
@@ -49,10 +56,23 @@
         right: 6%;
         text-align: left;
 
+        @include respond(tab-land) {
+            right: 5%;
+            width: 33%;
+            top: 27%;
+        }
+
+        @include respond(tab-port) {
+            left: 10%;
+            top: 35%;
+            width: 55%;
+        }
+
         @include respond(phone) {
             top: 40%;
             right: 0;
             left: 0;
+            width: 100%;
             margin: 0 auto;
             text-align: center;
         }

@@ -292,18 +292,21 @@ div#specialBox, div#specialBox2 {
 	color: $color-primary;
 }
 
-@media screen and (max-width: 1024px){
+@include respond(tab-land){
     div#specialBox, div#specialBox2 {
-        margin: 130px auto 0px auto;
+        margin: 0;
         height: 13rem;
+        left: 24%;
     }
 }
 
-@media screen and (max-width: 575px){
+@include respond(phone){
     div#specialBox, div#specialBox2 {
-        width: 20rem; 
-        margin: 70px auto 0px auto;
+        width: 24rem; 
+        margin: 0;
         height: 11rem;
+        left: 24%;
+        top: 32%;
     }
 }
 
