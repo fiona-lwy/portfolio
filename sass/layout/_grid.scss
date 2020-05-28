@@ -9,12 +9,9 @@
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
-
-        @include respond(tab-port) {
-            margin-bottom: $gutter-vertical-small;
-        }
     }
     
+
     @include respond(tab-land) {
         max-width: $grid-width-tab-land;
         padding: 0 3rem;
@@ -38,12 +35,7 @@
 
             @include respond(tab-port) {
                 margin-right: 0;
-                margin-bottom: $gutter-vertical-small;
-            }
-
-            @include respond(phone) {
-                margin-right: 0;
-                margin-bottom: 5rem;
+                margin-bottom: 0;
             }
         }
 
