@@ -452,30 +452,6 @@ h6 {
   height: auto;
   background-size: cover; }
 
-.feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
-  padding: 2.5rem;
-  text-align: center;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
-    .feature-box {
-      padding: 2rem; } }
-  .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: .5rem;
-    display: inline-block;
-    background-image: linear-gradient(to right, #F4DBDC, #934A5F);
-    -webkit-background-clip: text;
-    color: transparent; }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
-      .feature-box__icon {
-        margin-bottom: 0; } }
-  .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
-
 .card {
   perspective: 150rem;
   /*Firefox*/
@@ -514,7 +490,7 @@ h6 {
     background-size: cover;
     height: 100%; }
     .card__picture-1 {
-      background-image: linear-gradient(to bottom, rgba(244, 219, 220, 0.3), rgba(147, 74, 95, 0.5)), url("../img/sidework_hero.jpeg"); }
+      background-image: linear-gradient(to bottom, rgba(244, 219, 220, 0.3), rgba(147, 74, 95, 0.5)), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729136/portfolio/sidework_hero_kqa0aa.jpg"); }
       @media only screen and (max-width: 85.4em) and (orientation: landscape) {
         .card__picture-1 {
           background-position: 10% 10%; } }
@@ -522,7 +498,7 @@ h6 {
         .card__picture-1 {
           background-position: 10% 10%; } }
     .card__picture-2 {
-      background-image: linear-gradient(to bottom, rgba(244, 219, 220, 0.1), rgba(147, 74, 95, 0.5)), url("../img/tutoring_heroimg.jpeg"); }
+      background-image: linear-gradient(to bottom, rgba(244, 219, 220, 0.1), rgba(147, 74, 95, 0.5)), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729151/portfolio/tutoring_heroimg_oacxqi.jpg"); }
       @media only screen and (max-width: 85.4em) and (orientation: landscape) {
         .card__picture-2 {
           background-position: top; } }
@@ -806,7 +782,7 @@ h6 {
 
 .flex__item {
   margin: 5rem 3rem;
-  width: 29%;
+  width: 28%;
   background-size: cover;
   border-radius: 10px; }
   @media only screen and (max-width: 37.5em) {
@@ -836,10 +812,10 @@ h6 {
     .banner {
       height: 40vh; } }
   .banner-1 {
-    background-image: url(../img/project2Img.jpg); }
+    background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729144/portfolio/project2Img_hcrdhk.jpg"); }
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
       .banner-1 {
-        background-image: url(../img/project2Img.jpg); } }
+        background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729144/portfolio/project2Img_hcrdhk.jpg"); } }
 
 .arrow {
   color: #777;
@@ -860,7 +836,7 @@ h6 {
         display: block;
         height: 160rem; } }
   .overview__bg {
-    background-image: linear-gradient(to right bottom, rgba(207, 103, 102, 0.4), rgba(244, 219, 220, 0.3)), url(../img/writinghand.png);
+    background-image: linear-gradient(to right bottom, rgba(207, 103, 102, 0.4), rgba(244, 219, 220, 0.3)), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png");
     margin-bottom: -10rem;
     width: 52%;
     height: auto;
@@ -879,6 +855,12 @@ h6 {
     top: 5rem;
     display: block;
     z-index: 2; }
+    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+      .overview__position {
+        width: 76%; } }
+    @media only screen and (max-width: 64em) and (orientation: portrait) {
+      .overview__position {
+        width: 78%; } }
     @media only screen and (max-width: 37.5em) {
       .overview__position {
         width: 90%;
@@ -906,6 +888,9 @@ h6 {
     margin: auto 0;
     background-color: #F4DBDC;
     display: inline-block; }
+    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+      .heading__decor::before, .heading__decor::after {
+        width: 20rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading__decor::before, .heading__decor::after {
         background-color: transparent; } }
@@ -1191,7 +1176,7 @@ div#specialBox, div#specialBox2 {
         margin: 0; } }
   .sidework__container .flex__item {
     margin: 5rem 3rem;
-    width: 45%;
+    width: 43%;
     border-radius: 10px; }
     @media only screen and (max-width: 37.5em) {
       .sidework__container .flex__item {
@@ -1331,10 +1316,16 @@ div#specialBox, div#specialBox2 {
       margin-right: 6rem; }
       @media only screen and (max-width: 64em) and (orientation: portrait) {
         .row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
+          margin-right: 5rem;
           margin-bottom: 0; } }
   .row .padding-add {
     padding-left: 20rem; }
+    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+      .row .padding-add {
+        padding-left: 0; } }
+    @media only screen and (max-width: 64em) and (orientation: portrait) {
+      .row .padding-add {
+        padding-left: 0; } }
     @media only screen and (max-width: 37.5em) {
       .row .padding-add {
         padding-left: 0; } }
@@ -1582,18 +1573,21 @@ div#specialBox, div#specialBox2 {
       padding: 25rem 2rem 2rem 2rem; } }
 
 .section-sidework {
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(244, 219, 220, 0.8)), url("../img/more_img.jpeg");
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(244, 219, 220, 0.8)), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729142/portfolio/more_img_g7wiyr.jpg");
   background-size: cover;
   padding: 15rem 0;
   position: relative;
   width: 100%; }
   @media only screen and (max-width: 64em) and (orientation: portrait) {
     .section-sidework {
-      padding: 5rem 0;
+      padding: 5rem;
       background-position: top left; } }
   @media only screen and (max-width: 37.5em) {
     .section-sidework > .row {
       margin: 2rem; } }
+
+.section-persona {
+  align-items: stretch; }
 
 /*
 .book {

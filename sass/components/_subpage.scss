@@ -25,7 +25,7 @@
     }
 
     &-1 {
-    background-image: url(../img/project2Img.jpg);
+    background-image: url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729144/portfolio/project2Img_hcrdhk.jpg');
     
         @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
                 only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
@@ -34,7 +34,7 @@
                     to right bottom, 
                     rgba($color-primary-light, 0.8), 
                     rgba($color-primary-dark, 0.8)), */
-                    url(../img/project2Img.jpg);
+                    url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729144/portfolio/project2Img_hcrdhk.jpg');
         }
     }
 }
@@ -63,7 +63,7 @@
     }
 
     &__bg {
-        background-image: linear-gradient(to right bottom, rgba($color-primary, .4), rgba($color-primary-light, .3)),url(../img/writinghand.png);
+        background-image: linear-gradient(to right bottom, rgba($color-primary, .4), rgba($color-primary-light, .3)),url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png');
         margin-bottom: -10rem;
         width: 52%;
         height: auto;
@@ -85,6 +85,14 @@
         top: 5rem;
         display: block;
         z-index: 2;
+
+        @include respond(tab-land) {
+            width: 76%;
+        }
+
+        @include respond(tab-port) {
+            width: 78%;
+        }
 
         @include respond(phone) {
             width: 90%;
@@ -119,6 +127,10 @@
         margin: auto 0;
         background-color: $color-primary-light;
         display: inline-block;
+
+        @include respond(tab-land) {
+            width: 20rem;
+        }
 
         @include respond(phone) {
             background-color: transparent;

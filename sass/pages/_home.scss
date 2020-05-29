@@ -17,14 +17,14 @@
 }
 
 .section-sidework {
-    background-image: linear-gradient(to bottom right, rgba($color-white, .8), rgba($color-primary-light, .8)), url('../img/more_img.jpeg');
+    background-image: linear-gradient(to bottom right, rgba($color-white, .8), rgba($color-primary-light, .8)), url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729142/portfolio/more_img_g7wiyr.jpg');
     background-size: cover;
     padding: 15rem 0;
     position: relative;
     width: 100%;
 
     @include respond(tab-port) {
-        padding: 5rem 0;
+        padding: 5rem;
         background-position: top left;
     }
 
@@ -37,6 +37,10 @@
             margin: 2rem;
         }
     }
+}
+
+.section-persona {
+    align-items: stretch;
 }
 
 /*
