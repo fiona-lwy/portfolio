@@ -5,7 +5,11 @@
     color: $color-text;
 
     @include respond(tab-port) {
-        padding: 5rem 0;
+        padding: 5rem 2rem;
+    }
+
+    @include respond(phone) {
+        padding: 5rem 1rem;
     }
 
 

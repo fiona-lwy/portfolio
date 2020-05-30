@@ -7,13 +7,23 @@
     }
 
     &__image {
-        background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 60%, transparent 60%),url(../img/writinghand.png);
+        background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 60%, transparent 60%),url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png');
         background-size: 100%;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
 
+        @include respond(tab-land) {
+            background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 80%, transparent 80%),url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png');
+            background-size: cover;
+        }
+
+        @include respond(tab-port) {
+            background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 80%, transparent 80%),url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png');
+            background-size: cover;
+        }
+
         @include respond(phone) {
-            background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 80%, transparent 80%),url(../img/writinghand.png);
+            background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 80%, transparent 80%),url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png');
             background-size: cover;
         }
     }
@@ -23,8 +33,16 @@
         padding: 15rem 10rem;
         height: 100vh;
 
+        @include respond(tab-land) {
+            padding: 10rem;
+        }
+
+        @include respond(tab-port) {
+            padding: 30rem 5rem;
+        }
+
         @include respond(phone) {
-            padding: 15rem 1rem;
+            padding: 20rem 5rem;
             min-height: 85rem;
         }
     }
@@ -32,6 +50,16 @@
     &__content {
         width: 60%;
         padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 100%;
+            padding: 6rem;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 6rem;
+        }
 
         @include respond(phone) {
             padding: 4rem;
@@ -92,5 +120,9 @@
 
     &__textarea {
         min-height: 15rem;
+    }
+
+    & > .row {
+        display: block;
     }
 }

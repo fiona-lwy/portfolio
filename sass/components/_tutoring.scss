@@ -10,6 +10,41 @@
         background-repeat: no-repeat;
         background-position: bottom right;
         background-attachment: fixed;
+
+        & > .flex {
+            &__container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin: 5rem auto;
+            
+                & > .flex {
+        
+                    &__item {
+                        margin: 5rem 3rem;
+                        width: 28%;
+                        background-size: cover;
+                        border-radius: 10px;
+                
+                        @include respond(tab-land) {
+                            width: 27%;
+                        }
+                
+                        @include respond(tab-port) {
+                            width: 42%;
+                        }
+                
+                        @include respond(phone) {
+                            border-radius: 5px;
+                            margin: 3rem;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &__heroimg {
@@ -23,31 +58,6 @@
 
         @include respond(phone) {
             padding: 10rem 0;
-        }
-    }
-}
-
-.flex {
-
-    &__container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        margin: 5rem auto;
-    }
-
-    &__item {
-        margin: 5rem 3rem;
-        width: 28%;
-        background-size: cover;
-        border-radius: 10px;
-
-        @include respond(phone) {
-            border-radius: 5px;
-            margin: 3rem;
-            width: 90%;
         }
     }
 }

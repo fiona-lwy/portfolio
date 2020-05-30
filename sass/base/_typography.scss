@@ -154,6 +154,10 @@ h6 {
     padding: 5rem 0;
     display: inline-block;
 
+    @include respond(tab-land) {
+        padding: 5rem 4rem;
+    }
+
     @include respond(phone) {
         font-size: 2rem;
         padding: 4rem;

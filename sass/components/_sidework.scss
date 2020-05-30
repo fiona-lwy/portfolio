@@ -28,6 +28,14 @@
                 width: 43%;
                 border-radius: 10px;
 
+                @include respond(tab-land) {
+                    width: 43%;
+                }
+
+                @include respond(tab-port) {
+                    width: 42%;
+                }
+
                 @include respond(phone) {
                     border-radius: 5px;
                     width: 90%;
@@ -68,6 +76,14 @@
                 &2 {
                     margin: 5rem 3rem;
                     width: 25%;
+                    
+                    @include respond(tab-land) {
+                        width: 27%;
+                    }
+
+                    @include respond(tab-port) {
+                        width: 26%;
+                    }
 
                     @include respond(phone) {
                         margin: 3rem;

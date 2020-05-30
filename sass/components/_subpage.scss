@@ -132,6 +132,10 @@
             width: 20rem;
         }
 
+        @include respond(tab-port) {
+            width: 14rem;
+        }
+
         @include respond(phone) {
             background-color: transparent;
         }
@@ -301,7 +305,12 @@ div#specialBox, div#specialBox2 {
     height: 12rem;
     background: #FFF;
     border-radius: 10px;
-	color: $color-primary;
+    color: $color-primary;
+    
+    @include respond(tab-port){
+        top: 42%;
+        left: 23%;
+    }
 }
 
 @include respond(tab-land){
