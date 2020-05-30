@@ -26,16 +26,16 @@
 
     &-1 {
     background-image: url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729144/portfolio/project2Img_hcrdhk.jpg');
-    
-        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-                only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-                only screen and (min-width: 125em) {
-                background-image: /*linear-gradient(
-                    to right bottom, 
-                    rgba($color-primary-light, 0.8), 
-                    rgba($color-primary-dark, 0.8)), */
-                    url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729144/portfolio/project2Img_hcrdhk.jpg');
-        }
+    }
+
+    &-2 {
+        width: 95%;
+        margin: 0 auto;
+        background-image: url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729143/portfolio/project1Img_hux2p1.jpg');
+    }
+
+    &-3 {
+        background-image: url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729161/portfolio/project3Img_k0tjd9.jpg');
     }
 }
 
