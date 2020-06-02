@@ -94,7 +94,15 @@
 @include respond(phone) {
     .row .col-1-of-3-m {
             width: 30% !important;
-            margin-bottom: 0 !important;
-            margin-right: 1rem !important;
+            margin-bottom: 3rem !important;
+            margin-right: 5px !important;
     }
+}
+
+@include respond(phone) {
+    .row .col-1-of-3-m-f{
+        width: 100% !important;
+        margin-bottom: 3rem !important;
+        margin-right: 0 !important;
+}
 }

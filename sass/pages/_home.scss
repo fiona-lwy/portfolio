@@ -30,17 +30,44 @@
 
     > .row {
 
-    @include respond(tab-port) {
-        }
-
-    @include respond(phone) {
-            margin: 2rem;
+        @include respond(phone) {
+            @include mobileRow;
         }
     }
 }
 
+
+.section-research {
+    > .row {
+        @include respond(phone) {
+            display: block;
+            width: 100%;
+        }
+     }
+}
+
+
 .section-persona {
     align-items: stretch;
+    
+}
+
+.section-persona .row {
+    @include respond(phone) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.section-prototype {
+    > .container {
+         > .row {
+            @include respond(phone) {
+                display: block;
+                width: 100%;
+            }
+         }
+    }
 }
 
 /*

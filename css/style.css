@@ -838,7 +838,11 @@ h6 {
 .banner {
   background-size: cover;
   height: 90vh;
+  background-position: center;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 64em) and (orientation: portrait) {
+    .banner {
+      height: 53vh; } }
   @media only screen and (max-width: 37.5em) {
     .banner {
       height: 40vh; } }
@@ -856,6 +860,12 @@ h6 {
   margin-top: 3rem;
   font-size: 3rem; }
 
+.goal {
+  width: 40%; }
+
+.detail {
+  width: 60%; }
+
 .overview {
   margin: 10rem auto 20rem auto; }
   .overview__container {
@@ -866,9 +876,8 @@ h6 {
     flex-direction: row; }
     @media only screen and (max-width: 37.5em) {
       .overview__container {
-        height: 110rem;
         display: block;
-        height: 160rem; } }
+        height: 130rem; } }
   .overview__bg {
     background-image: linear-gradient(to right bottom, rgba(207, 103, 102, 0.4), rgba(244, 219, 220, 0.3)), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png");
     margin-bottom: -10rem;
@@ -879,9 +888,7 @@ h6 {
     border-left: 20px solid #031424; }
     @media only screen and (max-width: 37.5em) {
       .overview__bg {
-        width: 100%;
-        height: 50%;
-        margin-bottom: 0; } }
+        display: none; } }
   .overview__position {
     position: absolute;
     width: 50%;
@@ -897,8 +904,16 @@ h6 {
         width: 78%; } }
     @media only screen and (max-width: 37.5em) {
       .overview__position {
+        top: 0;
         width: 90%;
-        margin: 5rem auto; } }
+        margin: 0 auto; }
+        .overview__position > .row {
+          display: block;
+          margin: 0;
+          margin-bottom: 5rem; }
+          .overview__position > .row [class^="col-"]:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 5rem; } }
 
 .title {
   position: relative;
@@ -954,6 +969,9 @@ h6 {
   overflow: hidden;
   height: 80rem;
   padding: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .tools {
+      height: auto; } }
 
 .intro__icon {
   font-size: 10rem;
@@ -1019,6 +1037,17 @@ h6 {
 .otherprojects__bg {
   background-color: #f7f7f7;
   padding: 8rem 0; }
+  @media only screen and (max-width: 64em) and (orientation: portrait) {
+    .otherprojects__bg {
+      padding: 8rem 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .otherprojects__bg > .row {
+      display: block;
+      margin: 0;
+      margin-bottom: 5rem; }
+      .otherprojects__bg > .row [class^="col-"]:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 5rem; } }
 
 .otherprojects__container {
   width: 100%;
@@ -1030,6 +1059,11 @@ h6 {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
   padding: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .otherprojects__container {
+      display: block;
+      width: 80%;
+      margin: 0 auto; } }
 
 .otherprojects__img {
   width: 45%;
@@ -1446,8 +1480,14 @@ div#specialBox, div#specialBox2 {
 @media only screen and (max-width: 37.5em) {
   .row .col-1-of-3-m {
     width: 30% !important;
-    margin-bottom: 0 !important;
-    margin-right: 1rem !important; } }
+    margin-bottom: 3rem !important;
+    margin-right: 5px !important; } }
+
+@media only screen and (max-width: 37.5em) {
+  .row .col-1-of-3-m-f {
+    width: 100% !important;
+    margin-bottom: 3rem !important;
+    margin-right: 0 !important; } }
 
 .footer {
   background-color: #fff;
@@ -1684,10 +1724,30 @@ div#specialBox, div#specialBox2 {
       background-position: top left; } }
   @media only screen and (max-width: 37.5em) {
     .section-sidework > .row {
-      margin: 2rem; } }
+      display: block;
+      margin: 0;
+      margin-bottom: 5rem; }
+      .section-sidework > .row [class^="col-"]:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 5rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .section-research > .row {
+    display: block;
+    width: 100%; } }
 
 .section-persona {
   align-items: stretch; }
+
+@media only screen and (max-width: 37.5em) {
+  .section-persona .row {
+    display: block;
+    width: 100%; } }
+
+@media only screen and (max-width: 37.5em) {
+  .section-prototype > .container > .row {
+    display: block;
+    width: 100%; } }
 
 /*
 .book {
