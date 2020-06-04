@@ -1363,11 +1363,6 @@ div#specialBox, div#specialBox2 {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      height: 100vh; } }
   @media only screen and (max-width: 85.4em) and (orientation: landscape) {
     .header {
       background-position: right; } }
