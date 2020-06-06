@@ -58,10 +58,10 @@ ORDER: Base + Typography > General layout + grid > page layout > Components
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 65em) and (orientation: landscape) {
+  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 48em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     html {
       font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
@@ -238,13 +238,13 @@ h6 {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 48em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 48em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
@@ -608,73 +608,6 @@ h6 {
   .section-sidework .u-margin-top-huge {
     margin-top: 0 !important; } }
 
-.story {
-  width: 75%;
-  margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
-  padding: 6rem;
-  padding-left: 9rem;
-  font-size: 1.8rem;
-  transform: skewX(-12deg); }
-  @media only screen and (max-width: 48em) and (orientation: portrait) {
-    .story {
-      width: 100%;
-      padding: 4rem;
-      padding-left: 7rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .story {
-      transform: skewX(0); } }
-  .story__shape {
-    width: 15rem;
-    height: 15rem;
-    float: left;
-    transform: translateX(-3rem) skewX(12deg);
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%; }
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-      .story__shape {
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-        width: 15rem;
-        height: 15rem;
-        border-radius: none; } }
-    @media only screen and (max-width: 37.5em) {
-      .story__shape {
-        transform: translateX(-3rem) skewX(0); } }
-  .story__img {
-    height: 100%;
-    transform: translateX(-4rem) scale(1.4);
-    backface-visibility: hidden;
-    transition: all .5s; }
-  .story__text {
-    transform: skewX(12deg); }
-    @media only screen and (max-width: 37.5em) {
-      .story__text {
-        transform: skewX(0); } }
-  .story__caption {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 20%);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    text-align: center;
-    opacity: 0;
-    transition: all .5s;
-    backface-visibility: hidden; }
-  .story:hover .story__caption {
-    opacity: 1;
-    transform: translate(-50%, -50%); }
-  .story:hover .story__img {
-    transform: translateX(-4rem) scale(1);
-    filter: blur(3px) brightness(80%); }
-
 .bg-video {
   position: absolute;
   top: 0;
@@ -698,11 +631,11 @@ h6 {
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
-    @media only screen and (max-width: 65em) and (orientation: landscape) {
+    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
       .form__image {
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 80%, transparent 80%), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png");
         background-size: cover; } }
-    @media only screen and (max-width: 48em) and (orientation: portrait) {
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
       .form__image {
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 80%, transparent 80%), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png");
         background-size: cover; } }
@@ -714,10 +647,10 @@ h6 {
     background-color: #F4DBDC;
     padding: 15rem 10rem;
     height: 100vh; }
-    @media only screen and (max-width: 65em) and (orientation: landscape) {
+    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
       .form__background {
         padding: 10rem; } }
-    @media only screen and (max-width: 48em) and (orientation: portrait) {
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
       .form__background {
         padding: 30rem 5rem; } }
     @media only screen and (max-width: 37.5em) {
@@ -727,11 +660,11 @@ h6 {
   .form__content {
     width: 60%;
     padding: 6rem; }
-    @media only screen and (max-width: 65em) and (orientation: landscape) {
+    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
       .form__content {
         width: 100%;
         padding: 6rem; } }
-    @media only screen and (max-width: 48em) and (orientation: portrait) {
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
       .form__content {
         width: 100%;
         padding: 6rem; } }
@@ -1140,12 +1073,15 @@ div#specialBox, div#specialBox2 {
   font-family: century-old-style-std, serif;
   padding-left: 20rem;
   animation: blur 3s ease-in-out; }
-  @media only screen and (max-width: 48em) and (orientation: portrait) {
+  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
     .aboutme__wordings {
-      width: 80%;
-      font-size: 10rem;
+      font-size: 11rem; } }
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
+    .aboutme__wordings {
+      width: 51%;
       padding-left: 20rem;
-      top: 40%; } }
+      font-size: 11rem;
+      top: 30%; } }
   @media only screen and (max-width: 37.5em) {
     .aboutme__wordings {
       width: 70%;
@@ -1155,10 +1091,10 @@ div#specialBox, div#specialBox2 {
 
 .aboutme__heroimg {
   width: 90%; }
-  @media only screen and (max-width: 65em) and (orientation: landscape) {
+  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
     .aboutme__heroimg {
       width: 100%; } }
-  @media only screen and (max-width: 48em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .aboutme__heroimg {
       width: 100%; } }
 
@@ -1183,11 +1119,11 @@ div#specialBox, div#specialBox2 {
   right: 3%;
   width: 20%;
   background-size: cover; }
-  @media only screen and (max-width: 65em) and (orientation: landscape) {
+  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
     .aboutme__image3 {
       top: 48%;
       width: 25%; } }
-  @media only screen and (max-width: 48em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .aboutme__image3 {
       top: 50%; } }
   @media only screen and (max-width: 37.5em) {
@@ -1212,12 +1148,12 @@ div#specialBox, div#specialBox2 {
 
 .aboutme__textbox1 {
   margin-left: 60rem; }
-  @media only screen and (max-width: 65em) and (orientation: landscape) {
+  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
     .aboutme__textbox1 {
-      margin-left: 40rem; } }
-  @media only screen and (max-width: 48em) and (orientation: portrait) {
+      margin-left: 42rem; } }
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .aboutme__textbox1 {
-      margin-left: 34rem; } }
+      margin-left: 45rem; } }
   @media only screen and (max-width: 37.5em) {
     .aboutme__textbox1 {
       margin: 5rem auto;
@@ -1298,10 +1234,10 @@ div#specialBox, div#specialBox2 {
     margin: 5rem 3rem;
     width: 43%;
     border-radius: 10px; }
-    @media only screen and (max-width: 65em) and (orientation: landscape) {
+    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
       .sidework__container .flex__item {
         width: 43%; } }
-    @media only screen and (max-width: 48em) and (orientation: portrait) {
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
       .sidework__container .flex__item {
         width: 42%; } }
     @media only screen and (max-width: 37.5em) {
@@ -1334,10 +1270,10 @@ div#specialBox, div#specialBox2 {
     .sidework__container .flex__item2 {
       margin: 5rem 3rem;
       width: 25%; }
-      @media only screen and (max-width: 65em) and (orientation: landscape) {
+      @media only screen and (max-width: 85.4em) and (orientation: landscape) {
         .sidework__container .flex__item2 {
           width: 27%; } }
-      @media only screen and (max-width: 48em) and (orientation: portrait) {
+      @media only screen and (max-width: 65em) and (orientation: portrait) {
         .sidework__container .flex__item2 {
           width: 26%; } }
       @media only screen and (max-width: 37.5em) {
