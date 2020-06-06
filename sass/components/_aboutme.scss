@@ -84,7 +84,7 @@
             width: 25%;
         }
 
-        @include respond(tab-port-ipro {
+        @include respond(tab-port-ipro) {
             top: 50%;
         }
 
