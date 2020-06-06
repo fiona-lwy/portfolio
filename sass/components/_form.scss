@@ -12,12 +12,12 @@
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
 
-        @include respond(tab-land) {
+        @include respond(tab-land-ipro) {
             background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 80%, transparent 80%),url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png');
             background-size: cover;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             background-image: linear-gradient(105deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 80%, transparent 80%),url('https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png');
             background-size: cover;
         }
@@ -33,11 +33,11 @@
         padding: 15rem 10rem;
         height: 100vh;
 
-        @include respond(tab-land) {
+        @include respond(tab-land-ipro) {
             padding: 10rem;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             padding: 30rem 5rem;
         }
 
@@ -51,12 +51,12 @@
         width: 60%;
         padding: 6rem;
 
-        @include respond(tab-land) {
+        @include respond(tab-land-ipro) {
             width: 100%;
             padding: 6rem;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             width: 100%;
             padding: 6rem;
         }

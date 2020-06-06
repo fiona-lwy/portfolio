@@ -45,11 +45,11 @@
     &__heroimg {
         width: 90%;
 
-        @include respond(tab-land) {
+        @include respond(tab-land-ipro) {
             width: 100%;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             width: 100%;
         }
     }
@@ -79,12 +79,12 @@
         width: 20%;
         background-size: cover;
 
-        @include respond(tab-land) {
+        @include respond(tab-land-ipro) {
             top: 48%;
             width: 25%;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro {
             top: 50%;
         }
 
@@ -114,11 +114,11 @@
     &__textbox1 {
         margin-left: 60rem;
 
-        @include respond(tab-land) {
+        @include respond(tab-land-ipro) {
             margin-left: 40rem;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             margin-left: 34rem;
         }
 

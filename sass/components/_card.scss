@@ -99,9 +99,7 @@
         text-transform: uppercase;
     }
 
-
-
-    @include respond(tab-land) {
+    @include respond(tab-land-ipro) {
         height: 43rem;
         background-color: $color-primary-dark;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
@@ -140,7 +138,7 @@
         }
     }
 
-    @include respond(tab-port) {
+    @include respond(tab-port-ipro) {
         height: 43rem;
         background-color: $color-primary-dark;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);

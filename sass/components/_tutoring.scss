@@ -28,11 +28,11 @@
                         background-size: cover;
                         border-radius: 10px;
                 
-                        @include respond(tab-land) {
+                        @include respond(tab-land-ipro) {
                             width: 27%;
                         }
                 
-                        @include respond(tab-port) {
+                        @include respond(tab-port-ipro) {
                             width: 42%;
                         }
                 

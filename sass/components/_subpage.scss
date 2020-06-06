@@ -21,7 +21,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    @include respond(tab-port) {
+    @include respond(tab-port-ipro) {
         height: 53vh;
     }
 
@@ -96,11 +96,11 @@
         display: block;
         z-index: 2;
 
-        @include respond(tab-land) {
+        @include respond(tab-land-ipro) {
             width: 76%;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             width: 78%;
         }
 
@@ -145,11 +145,11 @@
         background-color: $color-primary-light;
         display: inline-block;
 
-        @include respond(tab-land) {
+        @include respond(tab-land-ipro) {
             width: 20rem;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             width: 14rem;
         }
 
@@ -227,7 +227,7 @@
     white-space: nowrap;
     width: 100%;
 
-    @include respond(tab-land){
+    @include respond(tab-land-ipro){
         height: 45rem;
     }
 
@@ -252,7 +252,7 @@
     margin: 2rem;
     width: auto;
 
-    @include respond(tab-land){
+    @include respond(tab-land-ipro){
             height: 35rem;
         }
 
@@ -279,7 +279,7 @@
         background-color: $color-grey-light;
         padding: 8rem 0;
 
-        @include respond(tab-port){
+        @include respond(tab-port-ipro){
             padding: 8rem 3rem;
         }
 
@@ -345,13 +345,13 @@ div#specialBox, div#specialBox2 {
     border-radius: 10px;
     color: $color-primary;
     
-    @include respond(tab-port){
+    @include respond(tab-port-ipro) {
         top: 42%;
         left: 23%;
     }
 }
 
-@include respond(tab-land){
+@include respond(tab-land-ipro) {
     div#specialBox, div#specialBox2 {
         margin: 0;
         height: 13rem;
@@ -359,7 +359,7 @@ div#specialBox, div#specialBox2 {
     }
 }
 
-@include respond(phone){
+@include respond(phone) {
     div#specialBox, div#specialBox2 {
         width: 24rem; 
         margin: 0;

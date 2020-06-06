@@ -7,8 +7,14 @@
         padding: 30rem 5rem 10rem 5rem;
     }
 
+    @include respond(tab-port-ipro) {
+        padding: 30rem 5rem 5rem 5rem;
+        margin-top: -10vh;
+    }
+
     @include respond(tab-port) {
         padding: 40rem 2rem 10rem 2rem;
+        margin-top: -20vh;
     }
 
     @include respond(phone) {
@@ -23,7 +29,7 @@
     position: relative;
     width: 100%;
 
-    @include respond(tab-port) {
+    @include respond(tab-port-ipro) {
         padding: 5rem;
         background-position: top left;
     }

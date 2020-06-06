@@ -4,7 +4,7 @@
     padding: 5rem 0;
     color: $color-text;
 
-    @include respond(tab-port) {
+    @include respond(tab-port-ipro) {
         padding: 5rem 2rem;
     }
 
@@ -28,7 +28,7 @@
         text-align: center;
         margin: 5rem auto;
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             margin: 3rem auto;
         }
     }
@@ -40,7 +40,7 @@
 
     &__navigation {
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             width: 100%;
             text-align: center;
         }
@@ -92,7 +92,7 @@
         font-weight: 400;
         color: $color-grey-dark;
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
         }
 
         @include respond(phone) {

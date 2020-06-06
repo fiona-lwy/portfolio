@@ -136,7 +136,7 @@ h6 {
     color: $color-grey-dark;
     margin-bottom: 3rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-port-ipro) {
         float: none;
     }
 
@@ -155,7 +155,7 @@ h6 {
     padding: 5rem 0;
     display: inline-block;
 
-    @include respond(tab-land) {
+    @include respond(tab-land-ipro) {
         padding: 5rem 4rem;
     }
 

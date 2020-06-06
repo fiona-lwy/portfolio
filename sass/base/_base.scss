@@ -10,11 +10,11 @@ html {
     //defines what 1rem is
     font-size: 62.5%; //1rem=10px; 10px/16px=62.5%
 
-    @include respond(tab-land) { //width <900, 1rem=9px; 9/16
+    @include respond(tab-land-ipro) { //width <900, 1rem=9px; 9/16
         font-size: 56.25%;
     }
 
-    @include respond(tab-port) { //width <600, 1rem=8px; 8/16=50
+    @include respond(tab-port-ipro) { //width <600, 1rem=8px; 8/16=50
         font-size: 50%;
     }
 

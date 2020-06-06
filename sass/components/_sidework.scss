@@ -28,11 +28,11 @@
                 width: 43%;
                 border-radius: 10px;
 
-                @include respond(tab-land) {
+                @include respond(tab-land-ipro) {
                     width: 43%;
                 }
 
-                @include respond(tab-port) {
+                @include respond(tab-port-ipro) {
                     width: 42%;
                 }
 
@@ -77,11 +77,11 @@
                     margin: 5rem 3rem;
                     width: 25%;
                     
-                    @include respond(tab-land) {
+                    @include respond(tab-land-ipro) {
                         width: 27%;
                     }
 
-                    @include respond(tab-port) {
+                    @include respond(tab-port-ipro) {
                         width: 26%;
                     }
 

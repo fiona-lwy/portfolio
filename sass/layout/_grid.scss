@@ -12,7 +12,7 @@
     }
     
 
-    @include respond(tab-land) {
+    @include respond(tab-land-ipro) {
         max-width: $grid-width-tab-land;
         padding: 0 3rem;
     }
@@ -22,7 +22,7 @@
     [class^="col-"] {
         float: left;
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             width: 49% !important;
         }
 
@@ -33,7 +33,7 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
 
-            @include respond(tab-port) {
+            @include respond(tab-port-ipro) {
                 margin-right: 5rem;
                 margin-bottom: 0;
             }
@@ -44,11 +44,11 @@
     .padding-add {
         padding-left: 20rem;
 
-        @include respond(tab-land) {
+        @include respond(tab-land-ipro) {
             padding-left: 0;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-port-ipro) {
             padding-left: 0;
         }
 

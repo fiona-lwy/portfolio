@@ -58,10 +58,10 @@ ORDER: Base + Typography > General layout + grid > page layout > Components
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+  @media only screen and (max-width: 65em) and (orientation: landscape) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     html {
       font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
@@ -123,7 +123,7 @@ body {
   color: transparent;
   letter-spacing: 5px;
   transition: all .2s; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .heading-secondary {
       font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -183,7 +183,7 @@ h6 {
   font-weight: 400;
   color: #777;
   margin-bottom: 3rem; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     h6 {
       float: none; } }
   @media only screen and (max-width: 37.5em) {
@@ -238,13 +238,13 @@ h6 {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
@@ -495,7 +495,7 @@ h6 {
     height: 100%; }
     .card__picture-1 {
       background-image: linear-gradient(to bottom, rgba(244, 219, 220, 0.3), rgba(147, 74, 95, 0.5)), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729136/portfolio/sidework_hero_kqa0aa.jpg"); }
-      @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+      @media only screen and (max-width: 65em) and (orientation: landscape) {
         .card__picture-1 {
           background-position: 10% 10%; } }
       @media only screen and (max-width: 37.5em) {
@@ -503,7 +503,7 @@ h6 {
           background-position: 10% 10%; } }
     .card__picture-2 {
       background-image: linear-gradient(to bottom, rgba(244, 219, 220, 0.1), rgba(147, 74, 95, 0.5)), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729151/portfolio/tutoring_heroimg_oacxqi.jpg"); }
-      @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+      @media only screen and (max-width: 65em) and (orientation: landscape) {
         .card__picture-2 {
           background-position: top; } }
       @media only screen and (max-width: 37.5em) {
@@ -546,7 +546,7 @@ h6 {
         width: 100%; }
       .card__sideworks {
         margin-bottom: 0; } }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .card {
       height: 43rem;
       background-color: #934A5F;
@@ -600,7 +600,7 @@ h6 {
       .card__sideworks {
         margin-bottom: 0; } }
 
-@media only screen and (max-width: 85.4em) and (orientation: landscape) {
+@media only screen and (max-width: 65em) and (orientation: landscape) {
   .section-sidework .u-margin-top-huge {
     margin-top: 0 !important; } }
 
@@ -618,7 +618,7 @@ h6 {
   padding-left: 9rem;
   font-size: 1.8rem;
   transform: skewX(-12deg); }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .story {
       width: 100%;
       padding: 4rem;
@@ -698,11 +698,11 @@ h6 {
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
-    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+    @media only screen and (max-width: 65em) and (orientation: landscape) {
       .form__image {
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 80%, transparent 80%), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png");
         background-size: cover; } }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 48em) and (orientation: portrait) {
       .form__image {
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 80%, transparent 80%), url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729162/portfolio/writinghand_mm4eee.png");
         background-size: cover; } }
@@ -714,10 +714,10 @@ h6 {
     background-color: #F4DBDC;
     padding: 15rem 10rem;
     height: 100vh; }
-    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+    @media only screen and (max-width: 65em) and (orientation: landscape) {
       .form__background {
         padding: 10rem; } }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 48em) and (orientation: portrait) {
       .form__background {
         padding: 30rem 5rem; } }
     @media only screen and (max-width: 37.5em) {
@@ -727,11 +727,11 @@ h6 {
   .form__content {
     width: 60%;
     padding: 6rem; }
-    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+    @media only screen and (max-width: 65em) and (orientation: landscape) {
       .form__content {
         width: 100%;
         padding: 6rem; } }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 48em) and (orientation: portrait) {
       .form__content {
         width: 100%;
         padding: 6rem; } }
@@ -803,7 +803,7 @@ h6 {
       @media only screen and (max-width: 85.4em) and (orientation: landscape) {
         .tutoring__container > .flex__container > .flex__item {
           width: 27%; } }
-      @media only screen and (max-width: 64em) and (orientation: portrait) {
+      @media only screen and (max-width: 65em) and (orientation: portrait) {
         .tutoring__container > .flex__container > .flex__item {
           width: 42%; } }
       @media only screen and (max-width: 37.5em) {
@@ -841,7 +841,7 @@ h6 {
   height: 90vh;
   background-position: center;
   background-repeat: no-repeat; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .banner {
       height: 53vh; } }
   @media only screen and (max-width: 37.5em) {
@@ -900,7 +900,7 @@ h6 {
     @media only screen and (max-width: 85.4em) and (orientation: landscape) {
       .overview__position {
         width: 76%; } }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
       .overview__position {
         width: 78%; } }
     @media only screen and (max-width: 37.5em) {
@@ -941,7 +941,7 @@ h6 {
     @media only screen and (max-width: 85.4em) and (orientation: landscape) {
       .heading__decor::before, .heading__decor::after {
         width: 20rem; } }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
       .heading__decor::before, .heading__decor::after {
         width: 14rem; } }
     @media only screen and (max-width: 37.5em) {
@@ -1038,7 +1038,7 @@ h6 {
 .otherprojects__bg {
   background-color: #f7f7f7;
   padding: 8rem 0; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .otherprojects__bg {
       padding: 8rem 3rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -1095,7 +1095,7 @@ div#specialBox, div#specialBox2 {
   background: #FFF;
   border-radius: 10px;
   color: #cf6766; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     div#specialBox, div#specialBox2 {
       top: 42%;
       left: 23%; } }
@@ -1140,7 +1140,7 @@ div#specialBox, div#specialBox2 {
   font-family: century-old-style-std, serif;
   padding-left: 20rem;
   animation: blur 3s ease-in-out; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .aboutme__wordings {
       width: 80%;
       font-size: 10rem;
@@ -1155,10 +1155,10 @@ div#specialBox, div#specialBox2 {
 
 .aboutme__heroimg {
   width: 90%; }
-  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+  @media only screen and (max-width: 65em) and (orientation: landscape) {
     .aboutme__heroimg {
       width: 100%; } }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .aboutme__heroimg {
       width: 100%; } }
 
@@ -1183,11 +1183,11 @@ div#specialBox, div#specialBox2 {
   right: 3%;
   width: 20%;
   background-size: cover; }
-  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+  @media only screen and (max-width: 65em) and (orientation: landscape) {
     .aboutme__image3 {
       top: 48%;
       width: 25%; } }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .aboutme__image3 {
       top: 50%; } }
   @media only screen and (max-width: 37.5em) {
@@ -1212,10 +1212,10 @@ div#specialBox, div#specialBox2 {
 
 .aboutme__textbox1 {
   margin-left: 60rem; }
-  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+  @media only screen and (max-width: 65em) and (orientation: landscape) {
     .aboutme__textbox1 {
       margin-left: 40rem; } }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .aboutme__textbox1 {
       margin-left: 34rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -1225,10 +1225,10 @@ div#specialBox, div#specialBox2 {
 
 .aboutme__textbox2 {
   margin-right: 45rem; }
-  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+  @media only screen and (max-width: 65em) and (orientation: landscape) {
     .aboutme__textbox2 {
       margin-right: 35rem; } }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .aboutme__textbox2 {
       margin-right: 30rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -1241,10 +1241,10 @@ div#specialBox, div#specialBox2 {
   text-align: left;
   width: 100%;
   height: 100rem; }
-  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+  @media only screen and (max-width: 65em) and (orientation: landscape) {
     .truth {
       height: 75rem; } }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
     .truth {
       height: 65rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -1260,12 +1260,12 @@ div#specialBox, div#specialBox2 {
     top: 30%;
     right: 28%;
     z-index: 4; }
-    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+    @media only screen and (max-width: 65em) and (orientation: landscape) {
       .truth__textbox {
         top: 25%;
         width: 50%;
         right: 16%; } }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 48em) and (orientation: portrait) {
       .truth__textbox {
         top: 16%;
         width: 55%;
@@ -1298,10 +1298,10 @@ div#specialBox, div#specialBox2 {
     margin: 5rem 3rem;
     width: 43%;
     border-radius: 10px; }
-    @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+    @media only screen and (max-width: 65em) and (orientation: landscape) {
       .sidework__container .flex__item {
         width: 43%; } }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 48em) and (orientation: portrait) {
       .sidework__container .flex__item {
         width: 42%; } }
     @media only screen and (max-width: 37.5em) {
@@ -1334,10 +1334,10 @@ div#specialBox, div#specialBox2 {
     .sidework__container .flex__item2 {
       margin: 5rem 3rem;
       width: 25%; }
-      @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+      @media only screen and (max-width: 65em) and (orientation: landscape) {
         .sidework__container .flex__item2 {
           width: 27%; } }
-      @media only screen and (max-width: 64em) and (orientation: portrait) {
+      @media only screen and (max-width: 48em) and (orientation: portrait) {
         .sidework__container .flex__item2 {
           width: 26%; } }
       @media only screen and (max-width: 37.5em) {
@@ -1366,7 +1366,7 @@ div#specialBox, div#specialBox2 {
   @media only screen and (max-width: 85.4em) and (orientation: landscape) {
     .header {
       background-position: right; } }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .header {
       background-position: left; } }
   @media only screen and (max-width: 37.5em) {
@@ -1392,27 +1392,25 @@ div#specialBox, div#specialBox2 {
     .header__logo:hover {
       animation: moveInRight 1s; }
   .header__text-box {
-    position: absolute;
-    top: 35%;
-    right: 6%;
-    text-align: left; }
+    display: inline-block;
+    text-align: left;
+    padding: 35rem 1rem 50rem 5rem; }
     @media only screen and (max-width: 85.4em) and (orientation: landscape) {
       .header__text-box {
-        right: 5%;
-        width: 33%;
-        top: 27%; } }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+        padding: 35rem 1rem 50rem 2rem; } }
+    @media only screen and (max-width: 65em) and (orientation: landscape) {
       .header__text-box {
-        left: 10%;
-        top: 35%;
-        width: 55%; } }
+        padding: 35rem 1rem 50rem 60rem; } }
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
+      .header__text-box {
+        padding: 35rem 1rem 80rem 8rem; } }
+    @media only screen and (max-width: 48em) and (orientation: portrait) {
+      .header__text-box {
+        padding: 40rem 1rem 70rem 8rem; } }
     @media only screen and (max-width: 37.5em) {
       .header__text-box {
-        top: 37%;
-        right: 0;
-        left: 4%;
         width: 100%;
-        margin: 0 auto;
+        padding: 11rem 6rem;
         text-align: center; } }
 
 .row {
@@ -1435,7 +1433,7 @@ div#specialBox, div#specialBox2 {
     clear: both; }
   .row [class^="col-"] {
     float: left; }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
       .row [class^="col-"] {
         width: 49% !important; } }
     @media only screen and (max-width: 37.5em) {
@@ -1443,7 +1441,7 @@ div#specialBox, div#specialBox2 {
         width: 100% !important; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 64em) and (orientation: portrait) {
+      @media only screen and (max-width: 65em) and (orientation: portrait) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 5rem;
           margin-bottom: 0; } }
@@ -1452,7 +1450,7 @@ div#specialBox, div#specialBox2 {
     @media only screen and (max-width: 85.4em) and (orientation: landscape) {
       .row .padding-add {
         padding-left: 0; } }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
       .row .padding-add {
         padding-left: 0; } }
     @media only screen and (max-width: 37.5em) {
@@ -1492,7 +1490,7 @@ div#specialBox, div#specialBox2 {
   font-family: century-old-style-std, serif;
   padding: 5rem 0;
   color: #57648C; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .footer {
       padding: 5rem 2rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -1507,13 +1505,13 @@ div#specialBox, div#specialBox2 {
   .footer__logo-box {
     text-align: center;
     margin: 5rem auto; }
-    @media only screen and (max-width: 64em) and (orientation: portrait) {
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
       .footer__logo-box {
         margin: 3rem auto; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .footer__navigation {
       width: 100%;
       text-align: center; } }
@@ -1564,7 +1562,7 @@ div#specialBox, div#specialBox2 {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .navigation__button {
       top: 4rem;
       right: 4rem; } }
@@ -1585,7 +1583,7 @@ div#specialBox, div#specialBox2 {
   background-image: radial-gradient(#F4DBDC, #cf6766);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .navigation__background {
       top: 4.5rem;
       right: 4.5rem; } }
@@ -1702,12 +1700,17 @@ div#specialBox, div#specialBox2 {
   background-color: #fff;
   padding: 25rem 0 15rem 0;
   margin-top: -20vh; }
-  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+  @media only screen and (max-width: 65em) and (orientation: landscape) {
     .section-project {
       padding: 30rem 5rem 10rem 5rem; } }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .section-project {
-      padding: 40rem 2rem 10rem 2rem; } }
+      padding: 30rem 5rem 5rem 5rem;
+      margin-top: -10vh; } }
+  @media only screen and (max-width: 48em) and (orientation: portrait) {
+    .section-project {
+      padding: 40rem 2rem 10rem 2rem;
+      margin-top: -20vh; } }
   @media only screen and (max-width: 37.5em) {
     .section-project {
       padding: 25rem 2rem 2rem 2rem; } }
@@ -1718,7 +1721,7 @@ div#specialBox, div#specialBox2 {
   padding: 15rem 0;
   position: relative;
   width: 100%; }
-  @media only screen and (max-width: 64em) and (orientation: portrait) {
+  @media only screen and (max-width: 65em) and (orientation: portrait) {
     .section-sidework {
       padding: 5rem;
       background-position: top left; } }
