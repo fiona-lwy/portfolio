@@ -775,21 +775,28 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 500px; }
   @media only screen and (max-width: 65em) and (orientation: portrait) {
     .banner {
-      height: 53vh; } }
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 53vh; } }
   @media only screen and (max-width: 37.5em) {
     .banner {
-      height: 40vh; } }
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 40vh; } }
   .banner-1 {
     background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729144/portfolio/project2Img_hcrdhk.jpg"); }
   .banner-2 {
     width: 95%;
     margin: 0 auto;
     background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729143/portfolio/project1Img_hux2p1.jpg"); }
+    @media only screen and (max-width: 65em) and (orientation: portrait) {
+      .banner-2 {
+        background-size: contain; } }
   .banner-3 {
     background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729161/portfolio/project3Img_k0tjd9.jpg"); }
 
