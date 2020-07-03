@@ -91,7 +91,7 @@ body {
   backface-visibility: hidden; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       width: 90%; } }
   .heading-primary--main {
     display: block;

@@ -16,7 +16,7 @@ body {
     backface-visibility: hidden;
 
     @include respond(phone) {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         width: 90%;
     }
 
