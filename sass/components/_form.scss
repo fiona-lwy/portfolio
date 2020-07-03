@@ -42,7 +42,7 @@
         }
 
         @include respond(phone) {
-            padding: 20rem 5rem;
+            padding: 15rem 5rem;
             min-height: 85rem;
         }
     }

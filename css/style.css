@@ -655,7 +655,7 @@ h6 {
         padding: 30rem 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .form__background {
-        padding: 20rem 5rem;
+        padding: 15rem 5rem;
         min-height: 85rem; } }
   .form__content {
     width: 60%;
