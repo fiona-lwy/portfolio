@@ -91,7 +91,7 @@ body {
   backface-visibility: hidden; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       width: 90%; } }
   .heading-primary--main {
     display: block;
@@ -1357,7 +1357,7 @@ div#specialBox, div#specialBox2 {
     @media only screen and (max-width: 37.5em) {
       .header__text-box {
         width: 100%;
-        padding: 11rem 6rem;
+        padding: 15rem 6rem;
         text-align: center; } }
 
 .row {

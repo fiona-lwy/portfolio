@@ -68,11 +68,9 @@
             padding: 40rem 1rem 70rem 8rem;
         }
 
-
-
         @include respond(phone) {
             width: 100%;
-            padding: 11rem 6rem;
+            padding: 15rem 6rem;
             text-align: center;
         }
     }
