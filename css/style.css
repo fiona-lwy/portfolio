@@ -91,8 +91,7 @@ body {
   backface-visibility: hidden; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      font-size: 2.5rem;
-      width: 90%; } }
+      font-size: 3rem; } }
   .heading-primary--main {
     display: block;
     font-family: proxima-nova, sans-serif;
@@ -1357,7 +1356,7 @@ div#specialBox, div#specialBox2 {
     @media only screen and (max-width: 37.5em) {
       .header__text-box {
         width: 100%;
-        padding: 15rem 6rem;
+        padding: 12rem 6rem;
         text-align: center; } }
 
 .row {
