@@ -1356,7 +1356,7 @@ div#specialBox, div#specialBox2 {
     @media only screen and (max-width: 37.5em) {
       .header__text-box {
         width: 100%;
-        padding: 12rem 6rem;
+        padding: 10rem 6rem;
         text-align: center; } }
 
 .row {
