@@ -31,7 +31,6 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 500px; 
 
     @include respond(tab-port-ipro) {
         padding: 5rem;
@@ -40,6 +39,12 @@
     }
 
     @include respond(tab-land-ipro) {
+        padding: 5rem;
+        background-position: top left;
+        background-attachment: scroll;
+    }
+
+    @include respond(phone) {
         padding: 5rem;
         background-position: top left;
         background-attachment: scroll;

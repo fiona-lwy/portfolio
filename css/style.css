@@ -1669,14 +1669,18 @@ div#specialBox, div#specialBox2 {
   width: 100%;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  min-height: 500px; }
+  background-repeat: no-repeat; }
   @media only screen and (max-width: 65em) and (orientation: portrait) {
     .section-sidework {
       padding: 5rem;
       background-position: top left;
       background-attachment: scroll; } }
   @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+    .section-sidework {
+      padding: 5rem;
+      background-position: top left;
+      background-attachment: scroll; } }
+  @media only screen and (max-width: 37.5em) {
     .section-sidework {
       padding: 5rem;
       background-position: top left;
