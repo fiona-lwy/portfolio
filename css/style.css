@@ -775,17 +775,17 @@ h6 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 500px; }
+  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+    .banner {
+      background-attachment: scroll;
+      min-height: 53vh; } }
   @media only screen and (max-width: 65em) and (orientation: portrait) {
     .banner {
-      background-attachment: none;
-      background-position: center;
-      background-repeat: no-repeat;
+      background-attachment: scroll;
       min-height: 53vh; } }
   @media only screen and (max-width: 37.5em) {
     .banner {
-      background-attachment: none;
-      background-position: center;
-      background-repeat: no-repeat;
+      background-attachment: scroll;
       min-height: 40vh; } }
   .banner-1 {
     background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729144/portfolio/project2Img_hcrdhk.jpg"); }
@@ -1675,7 +1675,12 @@ div#specialBox, div#specialBox2 {
     .section-sidework {
       padding: 5rem;
       background-position: top left;
-      background-attachment: none; } }
+      background-attachment: scroll; } }
+  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
+    .section-sidework {
+      padding: 5rem;
+      background-position: top left;
+      background-attachment: scroll; } }
   @media only screen and (max-width: 37.5em) {
     .section-sidework > .row {
       display: block;

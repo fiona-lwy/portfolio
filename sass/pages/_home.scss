@@ -36,7 +36,13 @@
     @include respond(tab-port-ipro) {
         padding: 5rem;
         background-position: top left;
-        background-attachment: none;
+        background-attachment: scroll;
+    }
+
+    @include respond(tab-land-ipro) {
+        padding: 5rem;
+        background-position: top left;
+        background-attachment: scroll;
     }
 
     > .row {

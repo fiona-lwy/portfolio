@@ -24,17 +24,18 @@
     background-attachment: fixed;
     min-height: 500px; 
 
+    @include respond(tab-land-ipro) {
+        background-attachment: scroll;
+        min-height: 53vh;
+    }
+
     @include respond(tab-port-ipro) {
-        background-attachment: none;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-attachment: scroll;
         min-height: 53vh;
     }
 
     @include respond(phone) {
-        background-attachment: none;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-attachment: scroll;
         min-height: 40vh;
     }
 
