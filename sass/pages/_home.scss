@@ -36,6 +36,7 @@
     @include respond(tab-port-ipro) {
         padding: 5rem;
         background-position: top left;
+        background-attachment: none;
     }
 
     > .row {
