@@ -14,3 +14,29 @@
         object-fit: cover;
     }
 }
+
+.bg-video_gif {
+    height: 480px;
+    width: 640px;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@include respond(phone) {
+    .bg-video_gif {
+        height: auto;
+        width: 370px;
+        overflow: hidden;
+
+        &__content {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

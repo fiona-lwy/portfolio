@@ -278,7 +278,7 @@ h6 {
   @media only screen and (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       font-size: 1.4rem;
-      padding: 1.3rem 3rem; } }
+      padding: 1.3rem 2rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -620,6 +620,25 @@ h6 {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+
+.bg-video_gif {
+  height: 480px;
+  width: 640px;
+  overflow: hidden; }
+  .bg-video_gif__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+@media only screen and (max-width: 37.5em) {
+  .bg-video_gif {
+    height: auto;
+    width: 370px;
+    overflow: hidden; }
+    .bg-video_gif__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; } }
 
 .form {
   display: block; }
