@@ -12,8 +12,9 @@ body {
 
 .heading-primary {
     font-family: proxima-nova, sans-serif;
-    font-size: 3.6rem;
+    font-size: 3.5rem;
     backface-visibility: hidden;
+    color: $color-grey-light;
 
     @include respond(phone) {
         font-size: 3rem;
@@ -21,7 +22,7 @@ body {
 
     &--main {
         display: block;
-        font-family: proxima-nova, sans-serif;
+        font-family: century-old-style-std, serif;
         font-weight: 700;
         animation-name: moveInRight;
         animation-duration: 1s;
@@ -30,14 +31,13 @@ body {
         */
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
-
-
     }
     
     &--sub {
         display: block;
+        font-size: 4rem;
         font-weight: 900;
-        font-family: proxima-nova, sans-serif;
+        font-family: century-old-style-std, serif;
         animation-name: moveInRight2;
         animation-duration: 2.5s;
         animation-iteration-count: 1;

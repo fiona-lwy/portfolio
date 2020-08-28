@@ -87,14 +87,15 @@ body {
 
 .heading-primary {
   font-family: proxima-nova, sans-serif;
-  font-size: 3.6rem;
-  backface-visibility: hidden; }
+  font-size: 3.5rem;
+  backface-visibility: hidden;
+  color: #f7f7f7; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 3rem; } }
   .heading-primary--main {
     display: block;
-    font-family: proxima-nova, sans-serif;
+    font-family: century-old-style-std, serif;
     font-weight: 700;
     animation-name: moveInRight;
     animation-duration: 1s;
@@ -105,8 +106,9 @@ body {
     animation-timing-function: ease-in; }
   .heading-primary--sub {
     display: block;
+    font-size: 4rem;
     font-weight: 900;
-    font-family: proxima-nova, sans-serif;
+    font-family: century-old-style-std, serif;
     animation-name: moveInRight2;
     animation-duration: 2.5s;
     animation-iteration-count: 1;
@@ -324,9 +326,6 @@ h6 {
 
 .btn--2inrow {
   margin: auto 0.5rem; }
-  @media only screen and (max-width: 37.5em) {
-    .btn--2inrow {
-      margin: auto 1rem; } }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.8rem;
@@ -817,6 +816,8 @@ h6 {
         background-size: contain; } }
   .banner-3 {
     background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729161/portfolio/project3Img_k0tjd9.jpg"); }
+  .banner-4 {
+    background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1598405241/portfolio/k6xmnp.jpg"); }
 
 .arrow {
   color: #777;
@@ -1323,20 +1324,13 @@ div#specialBox, div#specialBox2 {
 .header {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  background-image: url("../img/heroimg2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1540760938999-077b8231d890?ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative; }
-  @media only screen and (max-width: 85.4em) and (orientation: landscape) {
-    .header {
-      background-position: right; } }
-  @media only screen and (max-width: 65em) and (orientation: portrait) {
-    .header {
-      background-position: left; } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      background: linear-gradient(to right, rgba(244, 219, 220, 0.8), rgba(244, 219, 220, 0.9)), url("../img/heroimg2.jpg");
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
       height: 50vh;
@@ -1358,20 +1352,20 @@ div#specialBox, div#specialBox2 {
       animation: moveInRight 1s; }
   .header__text-box {
     display: inline-block;
-    text-align: left;
-    padding: 35rem 1rem 50rem 5rem; }
+    text-align: center;
+    padding: 40rem 50rem; }
     @media only screen and (max-width: 85.4em) and (orientation: landscape) {
       .header__text-box {
-        padding: 35rem 1rem 50rem 2rem; } }
+        padding: 40rem 40rem; } }
     @media only screen and (max-width: 65em) and (orientation: landscape) {
       .header__text-box {
-        padding: 35rem 1rem 50rem 60rem; } }
+        padding: 40rem 30rem; } }
     @media only screen and (max-width: 65em) and (orientation: portrait) {
       .header__text-box {
-        padding: 35rem 1rem 80rem 8rem; } }
+        padding: 50rem 30rem; } }
     @media only screen and (max-width: 48em) and (orientation: portrait) {
       .header__text-box {
-        padding: 40rem 1rem 70rem 8rem; } }
+        padding: 40rem 20rem; } }
     @media only screen and (max-width: 37.5em) {
       .header__text-box {
         width: 100%;
