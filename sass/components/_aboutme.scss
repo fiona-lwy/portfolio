@@ -78,7 +78,7 @@
     &__image3 {
         position: absolute;
         z-index: 3;
-        top: 58%;
+        top: 50%;
         right: 3%;
         width: 20%;
         background-size: cover;
@@ -176,18 +176,18 @@
         color: $color-white;
         padding: 15rem 8rem;
         position: absolute;
-        top: 30%;
+        top: 20%;
         right: 28%;
         z-index: 4;
 
         @include respond(tab-land) {
-            top: 25%;
+            top: 27%;
             width: 50%;
             right: 16%;
         }
 
         @include respond(tab-port) {
-            top: 16%;
+            top: 15%;
             width: 55%;
             right: 12%;
         }
@@ -196,7 +196,7 @@
             width: 65%;
             border-radius: 5px;
             padding: 5rem 2rem;
-            top: 3%;
+            top: 15%;
             right: 5%;
         }
     }

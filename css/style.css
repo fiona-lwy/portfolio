@@ -248,6 +248,9 @@ h6 {
   @media only screen and (max-width: 65em) and (orientation: portrait) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 1.5rem !important; } }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -280,7 +283,7 @@ h6 {
   @media only screen and (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       font-size: 1.4rem;
-      padding: 1.3rem 2rem; } }
+      padding: 1.3rem 3.5rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -808,8 +811,6 @@ h6 {
   .banner-1 {
     background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729144/portfolio/project2Img_hcrdhk.jpg"); }
   .banner-2 {
-    width: 95%;
-    margin: 0 auto;
     background-image: url("https://res.cloudinary.com/fiona-lwy/image/upload/v1590729143/portfolio/project1Img_hux2p1.jpg"); }
     @media only screen and (max-width: 65em) and (orientation: portrait) {
       .banner-2 {
@@ -1145,7 +1146,7 @@ div#specialBox, div#specialBox2 {
 .aboutme__image3 {
   position: absolute;
   z-index: 3;
-  top: 58%;
+  top: 50%;
   right: 3%;
   width: 20%;
   background-size: cover; }
@@ -1223,17 +1224,17 @@ div#specialBox, div#specialBox2 {
     color: #fff;
     padding: 15rem 8rem;
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 28%;
     z-index: 4; }
     @media only screen and (max-width: 65em) and (orientation: landscape) {
       .truth__textbox {
-        top: 25%;
+        top: 27%;
         width: 50%;
         right: 16%; } }
     @media only screen and (max-width: 48em) and (orientation: portrait) {
       .truth__textbox {
-        top: 16%;
+        top: 15%;
         width: 55%;
         right: 12%; } }
     @media only screen and (max-width: 37.5em) {
@@ -1241,7 +1242,7 @@ div#specialBox, div#specialBox2 {
         width: 65%;
         border-radius: 5px;
         padding: 5rem 2rem;
-        top: 3%;
+        top: 15%;
         right: 5%; } }
 
 .sidework__container {
