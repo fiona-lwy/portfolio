@@ -28,11 +28,11 @@
 
         &--front {
                 background-color: rgba($color-primary-dark, .95);
-            /*&-1 {
+            &-1 {
             }
 
             &-2 {
-            }*/
+            }
         }
 
         &--back {
@@ -62,11 +62,11 @@
             background-image: linear-gradient(to bottom, rgba($color-primary-light, .1), rgba($color-primary-dark, .5)), url('https://res.cloudinary.com/fiona-lwy/image/upload/v1694844998/portfolio/idework_hero_kqa0aa.jpg');
 
             @include respond(tab-land) {
-                background-position: top; /*10% 10%*/
+                background-position: 10% 10%;
             }
 
             @include respond(phone) {
-                background-position: top;
+                background-position: 10% 10%;
             }
         }
 
