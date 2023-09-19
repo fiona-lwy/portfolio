@@ -28,11 +28,11 @@
 
         &--front {
                 background-color: rgba($color-primary-dark, .95);
-            &-1 {
+            /*&-1 {
             }
 
             &-2 {
-            }
+            }*/
         }
 
         &--back {
@@ -59,7 +59,7 @@
         height: 100%;
 
         &-1 {
-            background-image: linear-gradient(to bottom, rgba($color-primary-light, .3), rgba($color-primary-dark, .5)), url('https://res.cloudinary.com/fiona-lwy/image/upload/v1694727532/bodywash_mockup2_sq_jvqb7e.jpg');
+            background-image: linear-gradient(to bottom, rgba($color-primary-light, .1), rgba($color-primary-dark, .5)), url('https://res.cloudinary.com/fiona-lwy/image/upload/v1694844998/portfolio/Artboard_13-1_scf1gd.jpg');
 
             @include respond(tab-land) {
                 background-position: 10% 10%;
