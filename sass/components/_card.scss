@@ -59,14 +59,14 @@
         height: 100%;
 
         &-1 {
-            background-image: linear-gradient(to bottom, rgba($color-primary-light, .1), rgba($color-primary-dark, .5)), url('https://res.cloudinary.com/fiona-lwy/image/upload/v1694844998/portfolio/Artboard_13-1_scf1gd.jpg');
+            background-image: linear-gradient(to bottom, rgba($color-primary-light, .1), rgba($color-primary-dark, .5)), url('https://res.cloudinary.com/fiona-lwy/image/upload/v1694844998/portfolio/idework_hero_kqa0aa.jpg');
 
             @include respond(tab-land) {
-                background-position: 10% 10%;
+                background-position: top; /*10% 10%*/
             }
 
             @include respond(phone) {
-                background-position: 10% 10%;
+                background-position: top;
             }
         }
 
